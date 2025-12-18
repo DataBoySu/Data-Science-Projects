@@ -1,0 +1,4 @@
+# Ignore Python virtual environment directory
+.venv/
+# Ignore Windows desktop.ini files
+desktop.ini
