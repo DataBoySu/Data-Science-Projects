@@ -1,4 +1,4 @@
-# ******** Hackathon 2024 Submission by Anshuman Singh
+# Sem_4 Case Study Project 2024 Submission by Anshuman Singh
 Loan Acceptance Prediction Model
 
 This project focuses on developing a machine learning model to predict customer loan acceptance using demographic, financial, and behavioral features. The dataset encompasses variables such as age, income, family members, education level, years of professional experience, and others.
