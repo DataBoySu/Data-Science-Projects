@@ -1,10 +1,10 @@
 # Emotion Classification Project - README
-By Anshuman Singh TS-RISE-MLAI-2606 RISE ID
+By Anshuman Singh For Undergrad Semester 6 Personal Project
 
-## What We Built
+## What I Built
 
-We created a computer program that can read text (like social media posts, reviews, or messages) and automatically identify what emotion the person was expressing. Think of it like having a computer that can understand if someone is happy, sad, angry, fearful, surprised, or feeling love just by reading their words.
-Alongside the moel, we also built a chat interface that can perform feedback analysis, give breakdown of each emotion used and its visualizations.
+I created a computer program that can read text (like social media posts, reviews, or messages) and automatically identify what emotion the person was expressing. Think of it like having a computer that can understand if someone is happy, sad, angry, fearful, surprised, or feeling love just by reading their words.
+Alongside the model, I also built a chat interface that can perform feedback analysis, give breakdown of each emotion used and its visualizations.
 
 ## Why This Matters
 
@@ -16,7 +16,7 @@ In today's digital world, millions of people express their feelings through text
 - **Mental health professionals** monitor patient well-being
 - **Content creators** understand audience reactions
 
-## The Challenge We Solved
+## The Challenge I Solved
 
 ### The Problem
 Emotions in text are complex. The same words can mean different things depending on context. For example:
@@ -25,9 +25,9 @@ Emotions in text are complex. The same words can mean different things depending
 - Computers need to understand not just individual words, but how they work together in sentences
 
 ### The Solution
-We built multiple different "digital brains" (AI models) and tested which ones work best, improving them step by step until we achieved 93% accuracy.
+I built multiple different "digital brains" (AI models) and tested which ones work best, improving them step by step until I achieved 93% accuracy.
 
-## What We Started With
+## What I Started With
 
 **Dataset**: 
 - Thousands of text samples already labeled with their emotions
@@ -44,7 +44,7 @@ We built multiple different "digital brains" (AI models) and tested which ones w
 ### Phase 1: Data Preparation (Getting the Text Ready)
 
 **Step 1: Text Cleaning**
-- **What we did**: Cleaned up messy text data
+- **What I did**: Cleaned up messy text data
 - **Why**: Raw text has inconsistencies that confuse computers
 - **How**: 
   - Fixed contractions ("can't" → "cannot")
@@ -53,24 +53,24 @@ We built multiple different "digital brains" (AI models) and tested which ones w
   - Removed common words that don't carry emotion ("the", "and", "is")
 
 **Step 2: Quality Control**
-- **What we did**: Removed duplicate and empty entries
+- **What I did**: Removed duplicate and empty entries
 - **Why**: Bad data leads to poor results
 - **Result**: Cleaner, more reliable dataset
 
 ### Phase 2: Traditional Machine Learning (The Foundation)
 
 **Step 3: Converting Text to Numbers**
-- **What we did**: Used TF-IDF (Term Frequency-Inverse Document Frequency)
+- **What I did**: Used TF-IDF (Term Frequency-Inverse Document Frequency)
 - **Why**: Computers work with numbers, not words
 - **How it works**: Gave each word a number based on how important it is (words that appear in many emotions get lower scores, unique words get higher scores)
 
 **Step 4: Building the First Model**
-- **What we did**: Created a baseline using Logistic Regression
+- **What I did**: Created a baseline using Logistic Regression
 - **Result**: 88% accuracy overall, but poor performance on rare emotions like "love" and "surprise"
 - **The problem**: The computer was biased toward common emotions because it saw them more often
 
 **Step 5: Fixing the Imbalance Problem**
-- **What we tried**:
+- **What I tried**:
   - **SMOTE**: Created artificial examples of rare emotions
   - **ADASYN**: Smarter artificial example creation, focusing on difficult cases
   - **Class weighting**: Told the computer to pay extra attention to rare emotions
@@ -85,21 +85,21 @@ We built multiple different "digital brains" (AI models) and tested which ones w
 ### Phase 3: Deep Learning Transition (The Semantic Understanding)
 
 **Step 7: Word Embeddings with Word2Vec**
-- **What we did**: Used Word2Vec to understand word meanings and relationships
+- **What I did**: Used Word2Vec to understand word meanings and relationships
 - **Why**: Words with similar meanings should be treated similarly
 - **Example**: "happy" and "joyful" should be recognized as related
 - **Technical**: 100-dimensional word vectors capturing semantic relationships
 - **Result**: Better understanding of language but lost some accuracy due to losing word order information
 
 **Step 8: GloVe Embeddings Integration**
-- **What we did**: Loaded pre-trained GloVe embeddings for richer word representations
+- **What I did**: Loaded pre-trained GloVe embeddings for richer word representations
 - **Why**: Leveraged knowledge from billions of words to understand context
-- **Advantage**: Better semantic understanding than our smaller Word2Vec model
+- **Advantage**: Better semantic understanding than my smaller Word2Vec model
 
 ### Phase 4: Advanced Neural Networks (The Breakthrough)
 
 **Step 9: Basic BiLSTM Architecture**
-- **What we built**: Bidirectional LSTM with GloVe embeddings
+- **What I built**: Bidirectional LSTM with GloVe embeddings
 - **Why this works**:
   - **BiLSTM**: Reads text forward and backward, understanding full context
   - **Sequential processing**: Maintains word order information
@@ -107,16 +107,16 @@ We built multiple different "digital brains" (AI models) and tested which ones w
 - **Result**: Major leap to 90% accuracy with much better sequence understanding
 
 **Step 10: Custom Attention Mechanism**
-- **What we added**: Custom attention layer to BiLSTM
+- **What I added**: Custom attention layer to BiLSTM
 - **How it works**: 
   - Automatically identifies the most emotional words in each sentence
   - Focuses computation on emotionally relevant parts
-  - Provides interpretability - we can see what the model focuses on
+  - Provides interpretability - I can see what the model focuses on
 - **Real-world analogy**: Like having a human reader who highlights emotional keywords while reading
 - **Result**: Achieved 93% accuracy with excellent minority class performance
 
 **Step 11: Advanced Architectures with Hyperparameter Tuning**
-- **What we built**: Multi-layer BiLSTM with Multi-Head Attention using Keras Tuner
+- **What I built**: Multi-layer BiLSTM with Multi-Head Attention using Keras Tuner
 - **Technology**: 
   - Automated hyperparameter optimization across 10+ trials
   - Multi-head attention for capturing different types of relationships
@@ -125,8 +125,8 @@ We built multiple different "digital brains" (AI models) and tested which ones w
 - **Result**: 92% accuracy - confirming that simpler attention was optimal for this dataset size
 
 **Step 12: Manual Multi-Head Attention Implementation**
-- **What we built**: BiLSTM + Manual Multi-Head Attention architecture
-- **Purpose**: Validate our understanding and explore architectural variations
+- **What I built**: BiLSTM + Manual Multi-Head Attention architecture
+- **Purpose**: Validate my understanding and explore architectural variations
 - **Technical innovation**: Custom implementation of multi-head attention mechanisms
 - **Result**: 93% accuracy, confirming the effectiveness of attention mechanisms
 
@@ -188,8 +188,8 @@ This technology can now be used for:
 ## Technical Innovation
 
 ### What Makes This Special
-- **Comprehensive approach**: We didn't just try one method—we systematically tested and improved multiple approaches
-- **Class imbalance focus**: We specifically solved the problem of rare emotions being ignored
+- **Comprehensive approach**: I didn't just try one method—I systematically tested and improved multiple approaches
+- **Class imbalance focus**: I specifically solved the problem of rare emotions being ignored
 - **Explainable progression**: Each improvement was measured and explained
 - **Practical applicability**: The final model is accurate enough for real-world use
 
@@ -215,7 +215,7 @@ This technology can now be used for:
 
 ## Conclusion
 
-We successfully built a comprehensive AI system that understands human emotions in text with 93% accuracy and 0.89 macro F1-score. Starting from a basic 88% accurate model that struggled with rare emotions, we systematically explored and improved through multiple approaches:
+I successfully built a comprehensive AI system that understands human emotions in text with 93% accuracy and 0.89 macro F1-score. Starting from a basic 88% accurate model that struggled with rare emotions, I systematically explored and improved through multiple approaches:
 
 **Traditional ML Journey**: From basic TF-IDF (88%) → SMOTE enhancement → ADASYN optimization (90.5%)
 
