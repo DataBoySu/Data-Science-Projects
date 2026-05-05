@@ -1,6 +1,10 @@
 # Emotion Classification Project - README
 By Anshuman Singh For Undergrad Semester 6 Personal Project
 
+Demo:
+
+[![Demo]](https://github.com/user-attachments/assets/007e8a98-f156-4285-944d-932a34496aed)
+
 ## What I Built
 
 I created a computer program that can read text (like social media posts, reviews, or messages) and automatically identify what emotion the person was expressing. Think of it like having a computer that can understand if someone is happy, sad, angry, fearful, surprised, or feeling love just by reading their words.
