@@ -1,5 +1,5 @@
 # Emotion Classification Project - README
-By Anshuman Singh For Undergrad Semester 6 Personal Project
+By Anshuman Singh
 
 Demo:
 
